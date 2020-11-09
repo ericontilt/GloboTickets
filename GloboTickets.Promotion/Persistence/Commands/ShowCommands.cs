@@ -4,7 +4,8 @@ using System.Threading.Tasks;
 
 namespace GloboTickets.Promotion
 {
-    public class ShowCommands
+
+    public class ShowCommands : IShowCommands
     {
         private PromotionContext repository;
 

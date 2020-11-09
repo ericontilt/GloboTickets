@@ -5,7 +5,8 @@ using System.Threading.Tasks;
 
 namespace GloboTickets.Promotion.DataAccess
 {
-    public class ContentQueries
+
+    public class ContentQueries : IContentQueries
     {
         private readonly PromotionContext repository;
 

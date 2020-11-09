@@ -2,7 +2,7 @@
 
 namespace GloboTickets.Promotion.DataAccess
 {
-    public class ShowModel
+    public class ShowInfo
     {
         public DateTimeOffset StartTime { get; set; }
     }

@@ -17,7 +17,7 @@ namespace GloboTickets.Promotion.UnitTest
         {
             var actGuid = await GivenAct();
 
-            List<ShowModel> shows = await showQueries.ListShows(actGuid);
+            List<ShowInfo> shows = await showQueries.ListShows(actGuid);
             shows.Should().BeEmpty();
         }
 

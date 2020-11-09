@@ -7,7 +7,8 @@ using Microsoft.EntityFrameworkCore;
 
 namespace GloboTickets.Promotion.DataAccess
 {
-    public class ActCommands
+
+    public class ActCommands : IActCommands
     {
         private readonly PromotionContext repository;
 

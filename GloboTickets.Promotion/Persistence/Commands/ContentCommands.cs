@@ -8,7 +8,8 @@ using System.Threading.Tasks;
 
 namespace GloboTickets.Promotion.DataAccess
 {
-    public class ContentCommands
+
+    public class ContentCommands : IContentCommands
     {
         private readonly PromotionContext repository;
 

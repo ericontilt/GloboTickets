@@ -8,7 +8,8 @@ using Microsoft.EntityFrameworkCore;
 
 namespace GloboTickets.Promotion.DataAccess
 {
-    public class VenueQueries
+
+    public class VenueQueries : IVenueQueries
     {
         private readonly PromotionContext repository;
 
