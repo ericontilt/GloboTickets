@@ -69,6 +69,7 @@ namespace GloboTicket.Promotion.Data
         public async Task<Venue> GetOrInsertVenue(Guid venueGuid)
         {
             var venue = Venue
+                .Include(venue => venue.Descriptions)
                 .Where(venue => venue.VenueGuid == venueGuid)
                 .SingleOrDefault();
             if (venue == null)
