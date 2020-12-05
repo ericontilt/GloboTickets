@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-namespace GloboTickets.Promotion.Venues
+namespace GloboTicket.Promotion.Venues
 {
     public class Venue
     {
