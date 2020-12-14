@@ -47,3 +47,17 @@ dotnet run --project GloboTicket.Promotion
 ```
 
 Or run GloboTicket.Promotion from Visual Studio.
+
+## Running the Emailer and Indexer
+
+The Emailer is a mock service that stands in for a process that emails about new shows.
+The Indexer simulates a service that indexes shows for search.
+They both use MassTransit to manage RabbitMQ.
+To start RabbitMQ, create a Docker container.
+To start it in a Docker container, run the shell script:
+
+```bash
+Scripts/startrabbitmq.sh
+```
+
+Then start the Emailer and Indexer console apps and schedule a show.
